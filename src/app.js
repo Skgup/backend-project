@@ -15,4 +15,12 @@ app.get('/',(req,res)=>{
 res.send("hello sumit how are you ")
 })
 
+//routes imort
+
+import userRouter from './routes/user.routes.js'
+
+
+// routes declaration
+
+app.use("/api/v1/users",userRouter)
 export {app}
